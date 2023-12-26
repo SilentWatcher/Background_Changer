@@ -1,0 +1,99 @@
+.main_container {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.main_container img{
+    position: absolute;
+    min-height: 50%;
+
+
+    filter: brightness(0);
+    opacity: 0.1;
+    animation: rotate 20s linear infinite;
+
+
+}
+
+
+/* rotate animation start*/
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+/* rotate animation start*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #b88a8a;
+    min-height: 92.5vh;
+    width: 100vw;
+
+    border-radius: 0 0 2rem 2rem;
+    transition: all 2s ease-in;
+
+}
+
+.container h1 {
+    background: #5e535333;
+    padding: .8rem;
+    border-radius: 0 0 8rem 8rem;
+    line-height: 100%;
+    color: #b88a8a;
+    transition: all 2s ease-in;
+
+
+}
+
+.colorBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    border-radius: 40px;
+    /* background: #dfd0d0; */
+    background: #5e535333;
+
+}
+
+.colorBox button {
+    height: 40px;
+    width: 70px;
+    padding: .2rem;
+    border-radius: 1.2rem;
+    border: 0;
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: .4rem;
+    box-shadow: inset 2px 2px 10px rgb(49, 45, 45);
+
+    transition: all .4s ease-in-out ;
+
+
+}
+
+.colorBox button:hover {
+
+   box-shadow:  2px 2px 10px rgb(151, 142, 142);
+}
